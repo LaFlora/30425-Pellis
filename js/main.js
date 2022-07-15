@@ -1,4 +1,4 @@
-class Cursos{
+/*class Cursos{
   constructor (item,nombre,precio){
     this.item=item;
     this.nombre=nombre;
@@ -10,14 +10,14 @@ const cursos = [];
 cursos.push(new curso("extensivo","5000"));
 cursos.push(new curso("intensivo","7000"));
 cursos.push(new cursos("conversacion","3000"));
-cursos.push(new cursos("business","10.000"));
+cursos.push(new cursos("business","10.000"));*/
 
 
 let carrito = 0;
 let inicio = Infinity;
 
 
-function registrarCurso() {
+function comprarCurso() {
   const extensivo = 5000;
   const intensivo = 7000;
   const conversacion = 3000;
