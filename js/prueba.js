@@ -34,12 +34,12 @@ let cursos = [
     new Curso (16, "business espaniol", 10000),
     ];
 
-let modalidades = ["extensivo","intensivo","conversacion","business"]
+let modalidad = ["extensivo","intensivo","conversacion","business"]
 
 let cursosEnCarrito = [];
 console.log(cursos);
 
-let modalidad = "";
+let modalidades = "";
 let salir = "salir";
 let idElegido = "";
 while (modalidad!=salir && modalidad!=null){
@@ -77,3 +77,11 @@ if(cursosEnCarrito>0){
     let telefono=prompt("Ingrese su número de móvil incluyendo su código de área");
     let email=prompt("Ingrese su correo electrónico");
 }
+
+const cursoParaCarrito = document.querySelector("ul");
+
+cursos.forEach((item) =>{
+    const li = document.createElement("li");
+    li.textContent = item;
+    cursoParaCarrito.appendChild(li);
+});
